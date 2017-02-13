@@ -69,6 +69,10 @@ body {
   font-size: 1.5rem;
 }
 
+.current {
+  color: #b23a88;
+  background-color: #ffdbf2;
+}
 /*
 ------------------------------------------------------
 */
@@ -80,8 +84,8 @@ body {
 
 .nav {
   display: none;
+  overflow: hidden;
 }
-
 
 .nav-check {
   position: absolute;
@@ -149,9 +153,6 @@ header nav a:hover {
     width: 50%;
     display: inline-block;
   }
-}
-
-@media only screen and (min-width: 38em) {
 
   nav a {
     width: 20%;
@@ -166,12 +167,16 @@ header nav a:hover {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+    width: 80%;
   }
 
   .logo {
     text-align: left;
   }
 }
+
+@media only screen and (min-width: 38em) {
+
 
 @media only screen and (min-width: 60em) {
 
