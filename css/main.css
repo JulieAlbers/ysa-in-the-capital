@@ -16,7 +16,90 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .img-flex {
   display: block;
   width: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: .25em;
+  margin-bottom: 0;
+}
+
+header nav a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+header nav a:hover {
+  background-color: #771f58;
+  color: #ffbfe8;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav a {
+    float: left;
+    width: 50%;
+    display: inline-block;
+  }
+
+  header nav {
+    padding-bottom: 72px;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  nav a {
+    width: 20%;
+  }
+
+  header nav {
+    padding-bottom: 41px;
+  }
+
+  .banner {
+    position: absolute;
+  }
+
+  .banner-content {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  header nav {
+    float: right;
+    max-width: 900px;
+    padding-bottom: 0;
+    padding-top: .1em;
+  }
+
+  header nav a {
+    text-align: center;
+    width: 140px;
+    margin-left: .25em;
+    padding: .5em 1em;
+    border-radius: 8px;
+  }
+
+  header nav li {
+    display: inline-block;
+  }
 }
