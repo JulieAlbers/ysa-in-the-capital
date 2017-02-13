@@ -75,15 +75,13 @@ body {
 
 .logo {
   text-align: center;
+  padding: .5em;
 }
 
 .nav {
   display: none;
 }
 
-.nav-check:checked ~ .nav{
-  display: block;
-}
 
 .nav-check {
   position: absolute;
@@ -94,6 +92,29 @@ body {
   cursor: pointer;
   display: inline-block;
   width: 40px;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+header {
+  position: relative;
 }
 
 header nav ul {
@@ -128,20 +149,12 @@ header nav a:hover {
     width: 50%;
     display: inline-block;
   }
-
-  header nav {
-    padding-bottom: 72px;
-  }
 }
 
 @media only screen and (min-width: 38em) {
 
   nav a {
     width: 20%;
-  }
-
-  header nav {
-    padding-bottom: 41px;
   }
 
   .banner {
@@ -161,13 +174,6 @@ header nav a:hover {
 }
 
 @media only screen and (min-width: 60em) {
-
-  header nav {
-    float: right;
-    max-width: 900px;
-    padding-bottom: 0;
-    padding-top: .1em;
-  }
 
   header nav a {
     text-align: center;
