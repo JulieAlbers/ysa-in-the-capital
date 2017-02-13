@@ -25,6 +25,47 @@ body {
   width: 100%;
 }
 
+/*-----------------------------------------------------BUTTONS*/
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #ffdbf2;
+  background-color: #b23a88;
+  padding: .5em .75em;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #771f58;
+}
+
+.btn-ghost {
+  border-color: #771f58;
+  background-color: #fff;
+  color: #771f58;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.btn-ghost:hover {
+  background-color: #b23a88;
+  color: #ffdbf2;
+}
+
+.btn-subtle {
+  background-color: #ffdbf2;
+  color: #b23a88;
+}
+
+.btn-subtle:hover {
+  background-color: #ffbfe8;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+
 header nav ul {
   list-style-type: none;
   padding: 0;
@@ -74,11 +115,13 @@ header nav a:hover {
   }
 
   .banner {
-    position: absolute;
+    position: relative;
   }
 
   .banner-content {
-    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 50%;
   }
 }
 
