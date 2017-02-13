@@ -10,6 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 *, *::before, *::after {
@@ -25,6 +26,13 @@ body {
   width: 100%;
 }
 
+.banner-content h2 {
+  font-family: "Lobster", cursive;
+}
+
+.color-1 {
+  color: #910000;
+}
 /*
 -----------------------------------------------------BUTTONS
 */
@@ -33,14 +41,15 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 1.125rem;
-  color: #ffdbf2;
-  background-color: #b23a88;
+  color: #910000;
+  background-color: #fff;
   padding: .5em .75em;
   border-radius: 8px;
 }
 
 .btn:hover {
-  background-color: #771f58;
+  background-color: #910000;
+  color: #fff
 }
 
 .btn-ghost {
@@ -68,11 +77,6 @@ body {
 .btn-big {
   font-size: 1.5rem;
 }
-
-.current {
-  color: #b23a88;
-  background-color: #ffdbf2;
-}
 /*
 ------------------------------------------------------
 */
@@ -80,6 +84,7 @@ body {
 .logo {
   text-align: center;
   padding: .5em;
+  font-family: 'Lobster', cursive;
 }
 
 .nav {
@@ -119,6 +124,7 @@ body {
 
 header {
   position: relative;
+  background-color: #fff;
 }
 
 header nav ul {
@@ -132,14 +138,19 @@ header nav ul {
 header nav a {
   display: block;
   text-decoration: none;
-  color: #000;
+  color: #910000;
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
 header nav a:hover {
-  background-color: #771f58;
-  color: #ffbfe8;
+  background-color: #910000;
+  color: #fff;
+}
+
+.current {
+  color: #910000;
+  background-color: #d1d1d1;
 }
 
 .banner-content {
