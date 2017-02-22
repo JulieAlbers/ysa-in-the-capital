@@ -26,6 +26,10 @@ body {
   width: 100%;
 }
 
+.horizontal-nav {
+  display: none;
+}
+
 .banner-content h2 {
   font-family: "Lobster", cursive;
 }
@@ -33,53 +37,6 @@ body {
 .color-1 {
   color: #910000;
 }
-/*
------------------------------------------------------BUTTONS
-*/
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.125rem;
-  color: #910000;
-  background-color: #fff;
-  padding: .5em .75em;
-  border-radius: 8px;
-}
-
-.btn:hover {
-  background-color: #910000;
-  color: #fff;
-}
-
-.btn-ghost {
-  border-color: #771f58;
-  background-color: #fff;
-  color: #771f58;
-  border-width: 3px;
-  border-style: solid;
-}
-
-.btn-ghost:hover {
-  background-color: #b23a88;
-  color: #ffdbf2;
-}
-
-.btn-subtle {
-  background-color: #ffdbf2;
-  color: #b23a88;
-}
-
-.btn-subtle:hover {
-  background-color: #ffbfe8;
-}
-
-.btn-big {
-  font-size: 1.5rem;
-}
-/*
-------------------------------------------------------
-*/
 
 .logo {
   text-align: center;
@@ -195,9 +152,21 @@ footer {
   }
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 67em) {
 
-  header nav a {
+  .toggle-nav {
+    display:none;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .horizontal-nav a {
     text-align: center;
     width: 150px;
     margin-left: .25em;
@@ -205,11 +174,31 @@ footer {
     border-radius: 8px;
   }
 
-  header nav li {
+  .horizontal-nav li {
     display: inline-block;
   }
 
-  .nav-label {
-    width: 50px;
+  .horizontal-nav {
+    display: block;
   }
+
+  .horizontal-nav h1 {
+    float: left;
+  }
+
+  .horizontal-nav ul {
+    float: right;
+    padding-top: .5em;
+  }
+
+  .horizontal-nav a:hover {
+    background-color: #910000;
+    color: #fff;
+  }
+
+  .current {
+    color: #910000;
+    background-color: #d1d1d1;
+  }
+
 }
