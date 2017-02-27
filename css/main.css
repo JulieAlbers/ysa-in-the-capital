@@ -11,6 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: "Droid Sans", sans-serif;
+
 }
 
 *, *::before, *::after {
@@ -19,6 +20,11 @@ html {
 
 body {
   margin: 0;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .img-flex {
@@ -81,7 +87,6 @@ body {
 
 header {
   position: relative;
-  background-color: #fff;
 }
 
 header nav ul {
